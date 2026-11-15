@@ -11,7 +11,7 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 
 ---
 
-## 📑 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#1-project-overview)
 2. [Business Background](#2-business-background)
@@ -64,10 +64,10 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 
 MetroMove Transit Solutions is a public transportation service provider operating across multiple cities and managing thousands of daily trips by:
 
-- 🔴 **Bus**
-- 🟢 **Train**
-- 🔵 **Ferry**
-- 🟡 **Tram**
+ 🔴 **Bus**
+ 🟢 **Train**
+ 🔵 **Ferry**
+ 🟡 **Tram**
 
 **Mission:** efficient, affordable and timely transportation, powered by data.
 
@@ -103,11 +103,11 @@ MetroMove Transit Solutions is a public transportation service provider operatin
 
 | # | Deliverable | Description |
 |:---:|---|---|
-| 1 | 🧹 **Data Cleaning** | Casing and whitespace fixes, date engineering, and group-median imputation of missing values |
-| 2 | 🔍 **Data Exploration** | Shape, data types, unique counts and sample inspection |
-| 3 | 📊 **Descriptive Statistics** | Mean, median, mode, range, variance and standard deviation for all numeric columns |
-| 4 | 📈 **EDA Visualisations** | Univariate, bivariate and multivariate Plotly charts |
-| 5 | 📓 **Jupyter Notebook** | Fully commented notebook with inline observations, plus a supporting slide deck |
+| 1 | **Data Cleaning** | Casing and whitespace fixes, date engineering, and group-median imputation of missing values |
+| 2 | **Data Exploration** | Shape, data types, unique counts and sample inspection |
+| 3 | **Descriptive Statistics** | Mean, median, mode, range, variance and standard deviation for all numeric columns |
+| 4 | **EDA Visualisations** | Univariate, bivariate and multivariate Plotly charts |
+| 5 | **Jupyter Notebook** | Fully commented notebook with inline observations, plus a supporting slide deck |
 
 ---
 
@@ -221,7 +221,7 @@ import plotly.graph_objects as go
 | 4 | Missing values (10% each) | `Passenger_Count`, `Fare_Amount`, `Trip_Duration_Minutes` | Biased totals and averages; broken revenue calculation |
 | 5 | Raw date/time formats | `Departure_Time`, `Trip_Date` | Hard to read and to analyse by hour or date |
 
-#### 📊 Chart 1: Count of Complete Values per Column
+#### Chart 1: Count of Complete Values per Column
 
 ![Chart 1: Count of complete values per column (missingno bar chart)](images/01_missing_values.png)
 
