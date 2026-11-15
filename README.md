@@ -1,4 +1,4 @@
-# 🚆 Optimizing Public Transit Operations
+# Optimizing Public Transit Operations
 
 ### MetroMove Transit Solutions: An Exploratory Data Analysis of Public Transportation
 
@@ -223,9 +223,7 @@ import plotly.graph_objects as go
 
 #### Chart 1: Count of Complete Values per Column
 
-![Chart 1: Count of complete values per column (missingno bar chart)](images/01_missing_values.png)
-
-> **Placeholder:** export the `msno.bar(raw_data)` chart from the *Data Exploration* section and save it as `images/01_missing_values.png`.
+<img width="1117" height="450" alt="image" src="https://github.com/user-attachments/assets/8ce0fc01-a795-4bb6-8f50-07feb3254024" />
 
 *The bar chart confirms 900 of 1,000 values present in `Passenger_Count`, `Fare_Amount` and `Trip_Duration_Minutes`, a fully empty `Unnamed: 10`, and a sparsely populated `Unnamed: 11`.*
 
@@ -412,7 +410,7 @@ Calculated on the cleaned dataset (after imputation):
 
 ### 10.2 Headline KPIs
 
-| 💷 Avg Fare | ⏱ Avg Duration | 👥 Avg Passengers | 🚌 Total Trips |
+| Avg Fare | Avg Duration | Avg Passengers | Total Trips |
 |:---:|:---:|:---:|:---:|
 | **£25.36** | **94.8 min** | **49 riders** | **1,000** |
 
@@ -427,11 +425,9 @@ plt.title("Outlier Detection Across Dataset")
 plt.show()
 ```
 
-#### 📊 Chart 2: Outlier Detection Across Dataset
+#### Chart 2: Outlier Detection Across Dataset, Numerical Columns - Boxplot
 
-![Chart 2: Outlier detection boxplot for all numeric columns](images/02_outlier_boxplot.png)
-
-> **Placeholder:** export the seaborn boxplot from the *Checking for Outliers* section and save it as `images/02_outlier_boxplot.png`.
+<img width="512" height="357" alt="image" src="https://github.com/user-attachments/assets/dada61a0-9393-43f8-a7ff-c3e3e00af09e" />
 
 **Findings:** using the standard 1.5 × IQR rule, no value in any numeric column falls outside the whiskers:
 
