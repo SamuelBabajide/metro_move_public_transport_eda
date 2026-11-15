@@ -6,7 +6,6 @@
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-Data%20Wrangling-150458?logo=pandas&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Complete-2A9D8F)
 
 An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip records across four transport modes (Bus, Train, Ferry and Tram). The project takes a messy, inconsistent and incomplete raw dataset, cleans and imputes it into an analysis-ready table, and then uses univariate, bivariate and multivariate visualisations to uncover patterns in passenger demand, fares, routes and revenue that can drive operational decisions.
 
@@ -15,11 +14,11 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 ## 📑 Table of Contents
 
 1. [Project Overview](#1-project-overview)
-2. [Business Context](#2-business-context)
-3. [Problem Statement & Rationale](#3-problem-statement--rationale)
+2. [Business Background](#2-business-background)
+3. [Problem Statement & Objective](#3-problem-statement--objective)
 4. [Project Goals & Deliverables](#4-project-goals--deliverables)
 5. [Repository Structure](#5-repository-structure)
-6. [Tech Stack & Libraries](#6-tech-stack--libraries)
+6. [Tools and Technologies](#6-tools-and-technologies)
 7. [Dataset Description](#7-dataset-description)
 8. [Data Cleaning & Transformation](#8-data-cleaning--transformation)
 9. [Missing Value Imputation](#9-missing-value-imputation)
@@ -59,7 +58,7 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 
 ---
 
-## 2. Business Context
+## 2. Business Background
 
 ### 2.1 About MetroMove Transit Solutions
 
@@ -82,7 +81,7 @@ MetroMove Transit Solutions is a public transportation service provider operatin
 
 ---
 
-## 3. Problem Statement & Rationale
+## 3. Problem Statement & Objective
 
 **Problem statement.** MetroMove has collected a large volume of trip data but lacks insight into trip performance, passenger behaviour and fare patterns because the records are messy, inconsistent and incomplete. As part of its new data-driven initiative, the company wants to clean, explore and summarise its trip records to identify the inefficiencies and patterns that can drive operational improvements.
 
@@ -146,7 +145,7 @@ MetroMove-Public-Transport-EDA/
 
 ---
 
-## 6. Tech Stack & Libraries
+## 6. Tools and Technologies
 
 | Category | Tools |
 |---|---|
