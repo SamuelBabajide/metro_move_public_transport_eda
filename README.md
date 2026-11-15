@@ -491,11 +491,10 @@ fig = ff.create_distplot([data['Fare_Amount'].dropna()], ['Fare Amount'],
                          bin_size=2, show_rug=False, curve_type='kde')
 ```
 
-#### 📊 Chart 3: Distribution of Fare Amounts (Histogram & KDE)
+#### Chart 3: Distribution of Fare Amounts (Histogram & KDE)
 
-![Chart 3: Distribution of fare amounts, histogram with KDE curve](images/03_fare_distribution.png)
+<img width="1516" height="491" alt="image" src="https://github.com/user-attachments/assets/3ef3b7ea-ade0-4bfb-83c8-d98d00faa2e0" />
 
-> **Placeholder:** save as `images/03_fare_distribution.png`.
 
 **💡 Insight:** fares spread fairly evenly from £0.50 to £49.95 (mean £25.36, median £25.45), with no dominant price point. This points to **fixed fare bands per route** rather than dynamic or distance-based pricing.
 
@@ -507,11 +506,10 @@ fig_donut = px.pie(transport_counts, values='Count', names='Mode_of_Transport',
                    hole=0.4, color='Mode_of_Transport', color_discrete_map=color_map)
 ```
 
-#### 📊 Chart 4: Distribution of Mode of Transport
+#### Chart 4: Distribution of Mode of Transport
 
-![Chart 4: Share of trips by mode of transport, donut chart](images/04_mode_distribution.png)
+<img width="1520" height="492" alt="image" src="https://github.com/user-attachments/assets/736a2587-9401-4ad2-9367-a617e14f47ba" />
 
-> **Placeholder:** save as `images/04_mode_distribution.png`.
 
 | Mode | Trips | Share |
 |---|---:|---:|
@@ -529,11 +527,9 @@ fig_passengers = px.histogram(data, x='Passenger_Count', nbins=30,
                               color_discrete_sequence=['#457B9D'])
 ```
 
-#### 📊 Chart 5: Distribution of Passenger Counts
+#### Chart 5: Distribution of Passenger Counts (Histogram)
 
-![Chart 5: Distribution of passenger counts per trip, histogram](images/05_passenger_distribution.png)
-
-> **Placeholder:** save as `images/05_passenger_distribution.png`.
+<img width="1517" height="487" alt="image" src="https://github.com/user-attachments/assets/47c817ea-668b-4885-8049-c55d852d822e" />
 
 **💡 Insight:** passenger counts are spread evenly across the full 1 to 99 range (mean 49, median 48), so **no single load level dominates**. Trips are as likely to run light as they are to run full.
 
@@ -551,11 +547,9 @@ day_count['Day_Type'] = day_count['Day_of_Week'].apply(
     lambda d: 'Workday' if d in ['Monday','Tuesday','Wednesday','Thursday','Friday'] else 'Weekend')
 ```
 
-#### 📊 Chart 6: Transit Demand Across the Week (Workday vs Weekend)
+#### Chart 6: Transit Demand Across the Week (Workday vs Weekend)
 
-![Chart 6: Number of trips per day of the week, coloured by workday or weekend](images/06_weekly_demand.png)
-
-> **Placeholder:** save as `images/06_weekly_demand.png`.
+<img width="1517" height="481" alt="image" src="https://github.com/user-attachments/assets/51caa633-292e-4387-b9b4-b7aea2c2b641" />
 
 | Day | Trips | Type |
 |---|---:|---|
@@ -576,11 +570,9 @@ fig = px.density_heatmap(data, x='Trip_Duration_Minutes', y='Fare_Amount',
                          nbinsx=20, nbinsy=20, color_continuous_scale='Blugrn')
 ```
 
-#### 📊 Chart 7: Fare Amount Distribution across Trip Duration
+#### Chart 7: Fare Amount Distribution across Trip Duration
 
-![Chart 7: Density heatmap of fare amount against trip duration](images/07_fare_vs_duration.png)
-
-> **Placeholder:** save as `images/07_fare_vs_duration.png`.
+<img width="1376" height="617" alt="image" src="https://github.com/user-attachments/assets/4cd5a239-f98c-4735-8e31-07e4886e4c20" />
 
 **💡 Insight:** trips are scattered evenly across the grid with no diagonal band, and the correlation between fare and duration is effectively zero (**r ≈ −0.05**). **Longer trips do not cost more**, which suggests pricing is set by route rather than by time or distance.
 
@@ -593,11 +585,9 @@ fig_box_v = px.box(data, x='Mode_of_Transport', y='Fare_Amount',
                    points='outliers')
 ```
 
-#### 📊 Chart 8: Fare Amount Distribution across Modes of Transport
+#### Chart 8: Fare Amount Distribution across Modes of Transport
 
-![Chart 8: Boxplot of fare amount by mode of transport](images/08_fare_by_mode.png)
-
-> **Placeholder:** save as `images/08_fare_by_mode.png`.
+<img width="687" height="767" alt="image" src="https://github.com/user-attachments/assets/8ba21723-c30b-40d8-8b40-b926f10249ff" />
 
 | Mode | Median Fare | Min | Max |
 |---|---:|---:|---:|
@@ -616,11 +606,9 @@ heatmap_matrix = route_summary.pivot_table(index='Arrival_Station', columns='Dep
                                            values='Trip_Volume', aggfunc='sum', fill_value=0)
 ```
 
-#### 📊 Chart 9: Trip Volumes Across Stations
+#### Chart 9: Trip Volumes Across Stations
 
-![Chart 9: Origin-destination heatmap of trip volumes between stations](images/09_station_od_heatmap.png)
-
-> **Placeholder:** save as `images/09_station_od_heatmap.png`.
+<img width="972" height="770" alt="image" src="https://github.com/user-attachments/assets/cde05b3e-1bee-4c7f-94e9-ad401e45a76f" />
 
 **💡 Insight:**
 - **All 36 station pairs are served**, so there are no unused routes.
