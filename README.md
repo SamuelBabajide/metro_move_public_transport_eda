@@ -587,7 +587,7 @@ fig_box_v = px.box(data, x='Mode_of_Transport', y='Fare_Amount',
 
 #### Chart 8: Fare Amount Distribution across Modes of Transport
 
-<img width="687" height="767" alt="image" src="https://github.com/user-attachments/assets/8ba21723-c30b-40d8-8b40-b926f10249ff" />
+<img width="587" height="467" alt="image" src="https://github.com/user-attachments/assets/8ba21723-c30b-40d8-8b40-b926f10249ff" />
 
 | Mode | Median Fare | Min | Max |
 |---|---:|---:|---:|
@@ -608,7 +608,7 @@ heatmap_matrix = route_summary.pivot_table(index='Arrival_Station', columns='Dep
 
 #### Chart 9: Trip Volumes Across Stations
 
-<img width="972" height="770" alt="image" src="https://github.com/user-attachments/assets/cde05b3e-1bee-4c7f-94e9-ad401e45a76f" />
+<img width="772" height="470" alt="image" src="https://github.com/user-attachments/assets/cde05b3e-1bee-4c7f-94e9-ad401e45a76f" />
 
 **💡 Insight:**
 - **All 36 station pairs are served**, so there are no unused routes.
@@ -621,7 +621,7 @@ heatmap_matrix = route_summary.pivot_table(index='Arrival_Station', columns='Dep
 
 *Combining three or more variables to surface complex operational patterns.*
 
-### 16.1 Total Revenue by Departure Station & Transport Mode (Clustered Bar Chart)
+### 16.1 Total Revenue by Departure Station & Transport Mode (Stacked Clustered Bar Chart)
 
 ```python
 data['Revenue'] = data['Fare_Amount'] * data['Passenger_Count']
@@ -629,11 +629,9 @@ multivariate_revenue = (data.groupby(['Departure_Station', 'Mode_of_Transport'])
                             .sum().reset_index(name='Total_Revenue'))
 ```
 
-#### 📊 Chart 10: Total Revenue by Departure Station and Transport Mode
+#### Chart 10: Total Revenue by Departure Station and Transport Mode
 
-![Chart 10: Clustered bar chart of total revenue by departure station and mode](images/10_revenue_station_mode.png)
-
-> **Placeholder:** save as `images/10_revenue_station_mode.png`.
+<img width="1372" height="652" alt="image" src="https://github.com/user-attachments/assets/8fecacc6-3adc-41af-9756-19bd1ffba237" />
 
 | Departure Station | Bus | Ferry | Train | Tram | **Total** |
 |---|---:|---:|---:|---:|---:|
@@ -654,11 +652,9 @@ avg_fare_data = data.groupby(['Mode_of_Transport', 'Day_of_Week'])['Fare_Amount'
 heatmap_pivot = avg_fare_data.pivot(index='Mode_of_Transport', columns='Day_of_Week', values='Fare_Amount')
 ```
 
-#### 📊 Chart 11: Average Fare Amount by Transport Mode and Day of the Week
+#### Chart 11: Average Fare Amount by Transport Mode and Day of the Week
 
-![Chart 11: Heatmap of average fare by mode and day of the week](images/11_avg_fare_mode_day.png)
-
-> **Placeholder:** save as `images/11_avg_fare_mode_day.png`.
+<img width="1371" height="722" alt="image" src="https://github.com/user-attachments/assets/dc9120f8-74f7-49c9-89f3-71e287008e96" />
 
 | Mode | Mon | Tue | Wed | **Thu** | Fri | Sat | Sun |
 |---|---:|---:|---:|---:|---:|---:|---:|
@@ -679,11 +675,9 @@ aggregated_data = data.groupby(['Mode_of_Transport', 'Day_of_Week']).agg(
 
 Each cell shows **trip count** with **total passengers** in brackets. Colour intensity follows total passengers, and a second colour bar shows the trip-count scale.
 
-#### 📊 Chart 12: Trip Count & Total Passenger Count by Transport Mode and Day of the Week
+#### Chart 12: Trip Count & Total Passenger Count by Transport Mode and Day of the Week
 
-![Chart 12: Dual-metric heatmap of trip count and total passengers by mode and day](images/12_trips_passengers_mode_day.png)
-
-> **Placeholder:** save as `images/12_trips_passengers_mode_day.png`.
+<img width="1512" height="567" alt="image" src="https://github.com/user-attachments/assets/85f72f0c-016d-4f52-8df4-0e59f1d7a26f" />
 
 | Mode | Mon | Tue | Wed | Thu | Fri | Sat | Sun |
 |---|---|---|---|---|---|---|---|
