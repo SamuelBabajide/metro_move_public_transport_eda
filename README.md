@@ -17,19 +17,19 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 2. [Business Background](#2-business-background)
 3. [Problem Statement & Objective](#3-problem-statement--objective)
 4. [Project Goals & Deliverables](#4-project-goals--deliverables)
-5. [Tools and Technologies](#6-tools-and-technologies)
-6. [Dataset Description](#7-dataset-description)
-7. [Data Cleaning & Transformation](#8-data-cleaning--transformation)
-8. [Missing Value Imputation](#9-missing-value-imputation)
-9. [Descriptive Summary Statistics](#10-descriptive-summary-statistics)
-10. [Outlier Detection](#11-outlier-detection)
-12. [Exporting the Cleaned Dataset](#12-exporting-the-cleaned-dataset)
-13. [Visualisation Approach & Colour Palette](#13-visualisation-approach--colour-palette)
-14. [Univariate Analysis](#14-univariate-analysis)
-15. [Bivariate Analysis](#15-bivariate-analysis)
-16. [Multivariate Analysis](#16-multivariate-analysis)
-17. [Key Insights Summary](#17-key-insights-summary)
-18. [Conclusions & Recommendations](#18-conclusions--recommendations)
+5. [Tools & Technologies](#5-tools-&-technologies)
+6. [Dataset Description](#6-dataset-description)
+7. [Data Cleaning & Transformation](#7-data-cleaning--transformation)
+8. [Missing Value Imputation](#8-missing-value-imputation)
+9. [Descriptive Summary Statistics](#9-descriptive-summary-statistics)
+10. [Outlier Detection](#10-outlier-detection)
+11. [Exporting the Cleaned Dataset](#11-exporting-the-cleaned-dataset)
+12. [Visualisation Approach & Colour Palette](#12-visualisation-approach--colour-palette)
+13. [Univariate Analysis](#13-univariate-analysis)
+14. [Bivariate Analysis](#14-bivariate-analysis)
+15. [Multivariate Analysis](#15-multivariate-analysis)
+16. [Key Insights Summary](#16-key-insights-summary)
+17. [Conclusions & Recommendations](#17-conclusions--recommendations)
 
 ---
 
@@ -38,7 +38,7 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 | Item | Detail |
 |---|---|
 | **Organisation** | MetroMove Transit Solutions (multi-city public transport provider) |
-| **Project type** | Exploratory Data Analysis (EDA) capstone |
+| **Project type** | Exploratory Data Analysis (EDA) |
 | **Dataset** | `Public_Transport_Trips_EDA.xlsx`: 1,000 trips × 12 raw columns |
 | **Transport modes** | Bus, Train, Ferry, Tram |
 | **Stations** | Airport, Central, Downtown, North Station, South Point, West End |
@@ -117,7 +117,7 @@ MetroMove Transit Solutions is a public transportation service provider operatin
 | Language | Python 3.12 |
 | Environment | Jupyter Notebook (Anaconda) |
 | Data wrangling | `pandas`, `numpy` |
-| Excel I/O | `openpyxl` (engine behind `pd.read_excel` / `to_excel`) |
+| Excel I/O | `openpyxl`  |
 | Missing-data visualisation | `missingno` |
 | Static plotting | `matplotlib`, `seaborn` |
 | Interactive plotting | `plotly.express`, `plotly.figure_factory`, `plotly.graph_objects` |
