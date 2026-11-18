@@ -9,7 +9,7 @@
 
 An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip records across four transport modes (Bus, Train, Ferry and Tram). The project takes a messy, inconsistent and incomplete raw dataset, cleans and imputes it into an analysis-ready table, and then uses univariate, bivariate and multivariate visualisations to uncover patterns in passenger demand, fares, routes and revenue that can drive operational decisions.
 
-> To explore each chart in detail, open the [interactive chart versions](https://nbviewer.org/github/SamuelBabajide/metro_move_public_transport_eda/blob/main/metro_move_public_transport_script.ipynb) in nbviewer.
+> **To explore each chart in detail, open the [interactive chart versions](https://nbviewer.org/github/SamuelBabajide/metro_move_public_transport_eda/blob/main/metro_move_public_transport_script.ipynb) in nbviewer.**
 
 ---
 
@@ -654,6 +654,10 @@ Each cell shows **trip count** with **total passengers** in brackets. Colour int
 | Tram | 27 (1,415) | 17 (844) | 21 (1,016) | **9 (465)** | 19 (1,133) | 18 (858) | 27 (1,341) |
 
 **💡 Insight:** Bus is busiest on **Monday by trips (54)** and **Sunday by passengers (2,768, the highest of any cell)**. Ferry overtakes Bus on Thursday. **Tram on Thursday is the quietest cell** (9 trips, 465 passengers), and Tram is the lightest mode on most days. This supports both the weekend-capacity and tram-coverage recommendations.
+
+---
+
+> **To explore each chart in detail, open the [interactive chart versions](https://nbviewer.org/github/SamuelBabajide/metro_move_public_transport_eda/blob/main/metro_move_public_transport_script.ipynb) in nbviewer.**
 
 ---
 
