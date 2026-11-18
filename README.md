@@ -17,7 +17,7 @@ An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip rec
 2. [Business Background](#2-business-background)
 3. [Problem Statement & Objective](#3-problem-statement--objective)
 4. [Project Goals & Deliverables](#4-project-goals--deliverables)
-5. [Tools & Technologies](#5-tools-&-technologies)
+5. [Tools & Technologies](#5-tools--technologies)
 6. [Dataset Description](#6-dataset-description)
 7. [Data Cleaning & Transformation](#7-data-cleaning--transformation)
 8. [Missing Value Imputation](#8-missing-value-imputation)
@@ -110,7 +110,7 @@ MetroMove Transit Solutions is a public transportation service provider operatin
 
 ---
 
-## 5. Tools and Technologies
+## 5. Tools & Technologies
 
 | Category | Tools |
 |---|---|
@@ -381,7 +381,7 @@ Calculated on the cleaned dataset (after imputation):
 
 ---
 
-## 10. Outlier Detection
+## 10. Outlier Detection (Boxplot)
 
 ```python
 plt.figure(figsize=(6, 4))
@@ -390,7 +390,7 @@ plt.title("Outlier Detection Across Dataset")
 plt.show()
 ```
 
-#### Chart 2: Outlier Detection Across Dataset, Numerical Columns - Boxplot
+#### Chart 2: Outlier Detection Across Dataset, Numerical Columns
 
 <img width="512" height="357" alt="image" src="https://github.com/user-attachments/assets/dada61a0-9393-43f8-a7ff-c3e3e00af09e" />
 
@@ -456,7 +456,7 @@ fig = ff.create_distplot([data['Fare_Amount'].dropna()], ['Fare Amount'],
                          bin_size=2, show_rug=False, curve_type='kde')
 ```
 
-#### Chart 3: Distribution of Fare Amounts (Histogram & KDE)
+#### Chart 3: Distribution of Fare Amounts
 
 <img width="1516" height="491" alt="image" src="https://github.com/user-attachments/assets/3ef3b7ea-ade0-4bfb-83c8-d98d00faa2e0" />
 
@@ -492,7 +492,7 @@ fig_passengers = px.histogram(data, x='Passenger_Count', nbins=30,
                               color_discrete_sequence=['#457B9D'])
 ```
 
-#### Chart 5: Distribution of Passenger Counts (Histogram)
+#### Chart 5: Distribution of Passenger Counts
 
 <img width="1517" height="487" alt="image" src="https://github.com/user-attachments/assets/47c817ea-668b-4885-8049-c55d852d822e" />
 
