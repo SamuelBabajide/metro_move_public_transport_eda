@@ -9,6 +9,8 @@
 
 An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip records across four transport modes (Bus, Train, Ferry and Tram). The project takes a messy, inconsistent and incomplete raw dataset, cleans and imputes it into an analysis-ready table, and then uses univariate, bivariate and multivariate visualisations to uncover patterns in passenger demand, fares, routes and revenue that can drive operational decisions.
 
+> To explore each chart in detail, open the [interactive chart versions](https://nbviewer.org/github/SamuelBabajide/metro_move_public_transport_eda/blob/main/metro_move_public_transport_script.ipynb) in nbviewer.
+
 ---
 
 ## Table of Contents
