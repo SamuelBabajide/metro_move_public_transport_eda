@@ -5,6 +5,7 @@
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
 ![pandas](https://img.shields.io/badge/pandas-Data%20Wrangling-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Static%20Plots-11557C?logo=matplotlib&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Interactive%20Charts-3F4F75?logo=plotly&logoColor=white)
 
 An end-to-end exploratory data analysis (EDA) of 1,000 public transport trip records across four transport modes (Bus, Train, Ferry and Tram). The project takes a messy, inconsistent and incomplete raw dataset, cleans and imputes it into an analysis-ready table, and then uses univariate, bivariate and multivariate visualisations to uncover patterns in passenger demand, fares, routes and revenue that can drive operational decisions.
